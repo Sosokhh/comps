@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'comps-project';
+  title = 'angular-material-tab-router';
+  navLinks = [
+    {
+      label: 'Collections',
+      link: './collections',
+      index: 0
+    }, {
+      label: 'Elements',
+      link: './elements',
+      index: 1
+    }, {
+      label: 'Views',
+      link: './views',
+      index: 1
+    }, {
+      label: 'Mods',
+      link: './mods',
+      index: 1
+    },
+  ];
 }
