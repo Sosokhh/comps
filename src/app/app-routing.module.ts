@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import {NotFoundComponent} from "./not-found/not-found.component";
 
 const routes: Routes = [
   { path: 'elements',
@@ -13,7 +14,9 @@ const routes: Routes = [
         import('./views/views.module').then((m) => m.ViewsModule )},
   { path: 'mods',
     loadChildren: () =>
-        import('./mods/mods.module').then((m) => m.ModsModule )}];
+        import('./mods/mods.module').then((m) => m.ModsModule )},
+  { path: '**', component: NotFoundComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

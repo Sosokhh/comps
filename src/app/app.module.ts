@@ -8,10 +8,12 @@ import {CollectionsModule} from "./collections/collections.module";
 import {ElementsModule} from "./elements/elements.module";
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTabsModule} from '@angular/material/tabs';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
