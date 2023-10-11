@@ -9,12 +9,13 @@ export class AppComponent {
   title = 'angular-material-tab-router';
   navLinks = [
     {
-      label: 'Collections',
-      link: './collections',
-      index: 0
-    }, {
       label: 'Elements',
       link: './elements',
+      index: 0
+    },
+    {
+      label: 'Collections',
+      link: './collections',
       index: 1
     }, {
       label: 'Views',
