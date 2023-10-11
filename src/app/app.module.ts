@@ -9,17 +9,19 @@ import {ElementsModule} from "./elements/elements.module";
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTabsModule} from '@angular/material/tabs';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     CollectionsModule,
     ElementsModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
     MatTabsModule,

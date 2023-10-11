@@ -19,11 +19,11 @@ export class AppComponent {
     }, {
       label: 'Views',
       link: './views',
-      index: 1
+      index: 2
     }, {
       label: 'Mods',
       link: './mods',
-      index: 1
+      index: 3
     },
   ];
 }
