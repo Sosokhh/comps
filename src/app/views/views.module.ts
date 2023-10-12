@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { ViewsRoutingModule } from './views-routing.module';
 import { ViewsHomeComponent } from './views-home/views-home.component';
 import { StatisticsComponent } from './statistics/statistics.component';
+import { ItemListComponent } from './item-list/item-list.component';
 import {MatCardModule} from "@angular/material/card";
 
 
@@ -11,6 +12,7 @@ import {MatCardModule} from "@angular/material/card";
   declarations: [
     ViewsHomeComponent,
     StatisticsComponent,
+    ItemListComponent
   ],
     imports: [
         CommonModule,
