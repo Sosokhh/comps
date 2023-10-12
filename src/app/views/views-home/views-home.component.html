@@ -1,1 +1,17 @@
-<p>views-home works!</p>
+<br>
+<mat-card style="background-color: #8e44ad; color: #fff">
+  <h1 class="text-3xl p-3">Statistics</h1>
+  <hr class="mx-4">
+  <div class="flex flex-row justify-center align-middle gap-3 body">
+    <app-statistics [target]="5000">
+      # of users
+    </app-statistics>
+    <app-statistics [target]="8000">
+      Revenue
+    </app-statistics>
+    <app-statistics [target]="15000">
+      Reviews
+    </app-statistics>
+  </div>
+</mat-card>
+
