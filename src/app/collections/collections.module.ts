@@ -11,13 +11,19 @@ import {HttpClientModule} from "@angular/common/http";
 import {MatInputModule} from "@angular/material/input";
 import {FormsModule} from "@angular/forms";
 import { TabsComponent } from './tabs/tabs.component';
+import { BiographyComponent } from './tabs/biography/biography.component';
+import { CompaniesComponent } from './tabs/companies/companies.component';
+import { PartnersComponent } from './tabs/partners/partners.component';
 
 
 @NgModule({
   declarations: [
     CollectionsHomeComponent,
     TableComponent,
-    TabsComponent
+    TabsComponent,
+    BiographyComponent,
+    CompaniesComponent,
+    PartnersComponent
   ],
   imports: [
     CommonModule,
@@ -27,7 +33,7 @@ import { TabsComponent } from './tabs/tabs.component';
     MatPaginatorModule,
     MatCardModule,
     MatInputModule,
-    FormsModule
+    FormsModule,
   ]
 })
 export class CollectionsModule { }

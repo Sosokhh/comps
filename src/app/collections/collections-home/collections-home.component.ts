@@ -9,7 +9,7 @@ import {Post, TableService} from "../table/table.service";
 
 })
 export class CollectionsHomeComponent {
-  headers: string[] = ['id', 'name', 'email', 'comment'];
+  headers: string[] = ['id', 'title', 'url'];
   posts: Post[] = [];
 
   constructor(private tableService: TableService) {

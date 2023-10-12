@@ -3,9 +3,8 @@ import {HttpClient} from "@angular/common/http";
 
 export interface Post {
   id: number;
-  name: string;
-  email: string;
-  body: string;
+  title: string;
+  url: string;
 }
 
 @Injectable()
@@ -16,6 +15,6 @@ export class TableService {
   }
 
   getPosts() {
-    return this.http.get<Post[]>('https://jsonplaceholder.typicode.com/comments');
+    return this.http.get<Post[]>('https://jsonplaceholder.typicode.com/photos');
   }
 }
