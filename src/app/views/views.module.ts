@@ -6,6 +6,7 @@ import { ViewsHomeComponent } from './views-home/views-home.component';
 import { StatisticsComponent } from './statistics/statistics.component';
 import { ItemListComponent } from './item-list/item-list.component';
 import {MatCardModule} from "@angular/material/card";
+import {SharedModule} from "../shared/shared.module";
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import {MatCardModule} from "@angular/material/card";
     imports: [
         CommonModule,
         ViewsRoutingModule,
-        MatCardModule
+        MatCardModule,
+        SharedModule
     ]
 })
 export class ViewsModule { }

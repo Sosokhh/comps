@@ -1,13 +1,11 @@
 <br>
 <mat-card>
-  <h1 class="text-3xl p-3">Table</h1>
-  <hr class="mx-4">
+  <app-divider>Table</app-divider>
   <app-table [headers]="headers" *ngIf="posts.length > 0" [data]="posts"></app-table>
 </mat-card>
 <br>
 <mat-card>
-  <h1 class="text-3xl p-3">Tab Menu</h1>
-  <hr class="mx-4">
+  <app-divider>Tab Menu</app-divider>
   <app-tabs>
     <div class="mb-4 border-b border-gray-200">
       <ul class="flex flex-wrap -mb-px text-sm font-medium text-center">

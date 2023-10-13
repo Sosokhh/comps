@@ -1,7 +1,6 @@
 <br>
 <mat-card style="background-color: #8e44ad; color: #fff">
-  <h1 class="text-3xl p-3">Statistics</h1>
-  <hr class="mx-4">
+  <app-divider>Statistics</app-divider>
   <div class="flex flex-row justify-center align-middle gap-3 body">
     <app-statistics [target]="5000">
       # of users
@@ -16,8 +15,7 @@
 </mat-card>
 <br>
 <mat-card>
-  <h1 class="text-3xl p-3">Item list</h1>
-  <hr class="mx-4">
+  <app-divider>Item List</app-divider>
   <app-item-list [items]="items"></app-item-list>
 </mat-card>
 

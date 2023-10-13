@@ -9,6 +9,7 @@ import { PlaceholderComponent } from './placeholder/placeholder.component';
 import { CardsComponent } from './cards/cards.component';
 import {MatButtonModule} from "@angular/material/button";
 import { CardComponent } from './cards/card/card.component';
+import {SharedModule} from "../shared/shared.module";
 
 
 @NgModule({
@@ -18,12 +19,13 @@ import { CardComponent } from './cards/card/card.component';
     CardsComponent,
     CardComponent
   ],
-  imports: [
-    CommonModule,
-    ElementsRoutingModule,
-    MatCardModule,
-    NgxSkeletonLoaderModule,
-    MatButtonModule
-  ]
+    imports: [
+        CommonModule,
+        ElementsRoutingModule,
+        MatCardModule,
+        NgxSkeletonLoaderModule,
+        MatButtonModule,
+        SharedModule
+    ]
 })
 export class ElementsModule { }

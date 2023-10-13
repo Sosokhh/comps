@@ -14,6 +14,7 @@ import { TabsComponent } from './tabs/tabs.component';
 import { BiographyComponent } from './tabs/biography/biography.component';
 import { CompaniesComponent } from './tabs/companies/companies.component';
 import { PartnersComponent } from './tabs/partners/partners.component';
+import {SharedModule} from "../shared/shared.module";
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { PartnersComponent } from './tabs/partners/partners.component';
     MatCardModule,
     MatInputModule,
     FormsModule,
+    SharedModule,
   ]
 })
 export class CollectionsModule { }
